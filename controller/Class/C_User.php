@@ -1,6 +1,5 @@
 <?php
-require_once '../../model/implementClass/C.User.php';
-
+require '../../model/Rout_Model.php';
 /*
 Class - User:
 Properties:

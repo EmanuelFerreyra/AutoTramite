@@ -19,6 +19,7 @@ function validarDatosUser( $nombre, $pass ){
 };
 
 
+
 /*
 Funcion si dependiendo del caso:
 truen : continua con el programa.

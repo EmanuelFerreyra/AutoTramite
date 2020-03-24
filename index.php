@@ -1,8 +1,13 @@
 <?php
 require 'controller/Constantes.php';
-include VIEW.LOGIN;
+require 'controller/functions/Func_Index.php';
 
-		
+
+$dirIndex = VIEW.T_BLOG;
+$dirError = VIEW.T_ERROR;
+$dirVar = indexValidacion( $dirIndex );
+
+indexReload( $dirVar, $dirIndex, $dirError );
 
 
 
