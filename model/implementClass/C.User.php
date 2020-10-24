@@ -15,16 +15,43 @@ use InterfaceUser\IUser;
         $this->userName = $nameUser;
         $this->userPass = $passUser;
     }
-    
-    public function nameUser(){
-        return $this->userName; 
-    }
-    public function passUser(){
-        return $this->userPass; 
-    }
-    public function idUser(){
-        print "id: 1"; 
-    }
+
+
+        /**
+         * @param mixed $userName
+         */
+        public function setUserName($userName)
+        {
+            $this->userName = $userName;
+        }
+
+        /**
+         * @param mixed $userPass
+         */
+        public function setUserPass($userPass)
+        {
+            $this->userPass = $userPass;
+        }
+
+        /**
+         * @return mixed
+         */
+        public function getUserName()
+        {
+            return $this->userName;
+        }
+
+        /**
+         * @return mixed
+         */
+        public function getUserPass()
+        {
+            return $this->userPass;
+        }
+
+        public function data(){
+            print 'data';
+        }
 }
 
 
